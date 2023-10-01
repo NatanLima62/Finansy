@@ -4,10 +4,25 @@
     <projectFile profileName="Finansy.Api">Finansy.Api/Finansy.Api.csproj</projectFile>
     <projectFile profileName="IIS Express">Finansy.Api/Finansy.Api.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3835e02-2e2b-4ca3-9e78-bc5c136e99a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Financy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finansy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Finansy.sln" afterDir="false" />
+    <list default="true" id="f3835e02-2e2b-4ca3-9e78-bc5c136e99a9" name="Changes" comment="Ajuste gitIgnore">
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/IAggregateRoot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/IEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/ISoftDelete.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/ITenant.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/ITracking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/IUnitOfWork.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Contracts/Repositories/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Entities/Admin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Entities/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Entities/Entity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finansy.Domain/Validators/AdminValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Financy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Financy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Finansy.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Finansy.Domain/Finansy.Domain.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -91,15 +107,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696188504392</updated>
-      <workItem from="1696188506840" duration="334000" />
+      <workItem from="1696188506840" duration="2305000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajuste gitIgnore">
+      <option name="closed" value="true" />
+      <created>1696188878558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696188878558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Ajuste gitIgnore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste gitIgnore" />
   </component>
 </project>
