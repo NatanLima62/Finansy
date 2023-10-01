@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A6198422-C7AD-4CE5-8367-CBC823981AB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Financy.Domain", "Financy.Domain", "{AF2C1B96-CAC7-42AF-AE38-EF51D0D4DA7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF2C1B96-CAC7-42AF-AE38-EF51D0D4DA7F} = {A6198422-C7AD-4CE5-8367-CBC823981AB2}
+	EndGlobalSection
+EndGlobal
