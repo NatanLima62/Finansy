@@ -4,16 +4,18 @@ using FluentValidation.Results;
 
 namespace Finansy.Domain.Entities;
 
-public class Admin : Entity, ISoftDelete, IAggregateRoot
+public class Usuario : Entity, ISoftDelete, IAggregateRoot, ITenant
 {
     public string Email { get; set; } = null!;
-    public string Name { get; set; } = null!;
-    public string Password { get; set; } = null!;
-    public bool Active { get; set; }
+    public string Nome { get; set; } = null!;
+    public string Senha { get; set; } = null!;
+    public int UnidadeId { get; set; }
+    public bool Ativo { get; set; }
 
     public override bool Validate(out ValidationResult validationResult)
     {
         validationResult = new AdminValidator().Validate(this);
         return validationResult.IsValid;
     }
+
 }

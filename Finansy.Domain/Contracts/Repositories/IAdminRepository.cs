@@ -2,10 +2,10 @@
 
 namespace Finansy.Domain.Contracts.Repositories;
 
-public interface IAdminRepository : IRepository<Admin>
+public interface IAdminRepository : IRepository<Usuario>
 {
-    void Add(Admin admin);
-    void Update(Admin admin);
-    Task<Admin?> GetById(int id);
-    Task<Admin?> GetByEmail(string email);
+    void Add(Usuario usuario);
+    void Update(Usuario usuario);
+    Task<Usuario?> GetById(int id);
+    Task<Usuario?> GetByEmail(string email);
 }
