@@ -7,7 +7,7 @@ namespace Finansy.Infra.Contexts;
 
 public sealed class TenantApplicationDbContext : BaseApplicationDbContext
 {
-    public TenantApplicationDbContext(DbContextOptions options, IAuthenticatedUser authenticatedUser) : base(options, authenticatedUser)
+    public TenantApplicationDbContext(DbContextOptions<TenantApplicationDbContext> options, IAuthenticatedUser authenticatedUser) : base(options, authenticatedUser)
     {
     }
     

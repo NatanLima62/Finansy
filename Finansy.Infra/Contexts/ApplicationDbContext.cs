@@ -5,7 +5,7 @@ namespace Finansy.Infra.Contexts;
 
 public sealed class ApplicationDbContext : BaseApplicationDbContext
 {
-    public ApplicationDbContext(DbContextOptions options, IAuthenticatedUser authenticatedUser) : base(options, authenticatedUser)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IAuthenticatedUser authenticatedUser) : base(options, authenticatedUser)
     {
     }
 }

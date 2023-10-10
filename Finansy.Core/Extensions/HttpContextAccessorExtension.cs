@@ -1,3 +1,4 @@
+using Finansy.Core.Enums;
 using Microsoft.AspNetCore.Http;
 
 namespace Finansy.Core.Extensions;
@@ -37,5 +38,11 @@ public static class HttpContextAccessorExtension
     {
         var unidade = contextAccessor?.HttpContext?.User.ObterUnidade();
         return string.IsNullOrWhiteSpace(unidade) ? string.Empty : unidade;
+    }
+    
+    public static ETipoUsuario? ObterTipoUsuario(this IHttpContextAccessor? contextAccessor)
+    {
+        var tipo = contextAccessor?.HttpContext?.User?.ObterTipoUsuario() ?? string.Empty;
+        return string.IsNullOrWhiteSpace(tipo) ? null : Enum.Parse<ETipoUsuario>(tipo);
     }
 }

@@ -1,14 +1,34 @@
+using System.Globalization;
+using Finansy.Application;
+using Microsoft.AspNetCore.Localization;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder
+    .Services
+    .Configure<RequestLocalizationOptions>(o => 
+    {
+        var supportedCultures = new[] { new CultureInfo("pt-BR") };
+        o.DefaultRequestCulture = new RequestCulture("pt-BR", "pt-BR");
+        o.SupportedCultures = supportedCultures;
+        o.SupportedUICultures = supportedCultures;
+    });
+
+builder
+    .Configuration
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("appsettings.json", true, true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true)
+    .AddEnvironmentVariables();
+
+builder.Services.ConfigureApplication(builder.Configuration);
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
 
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -1,3 +1,4 @@
+using Finansy.Core.Enums;
 using Finansy.Core.Extensions;
 using Microsoft.AspNetCore.Http;
 
@@ -14,6 +15,7 @@ public class AuthenticatedUser : IAuthenticatedUser
         Nome = httpContextAccessor.ObterNomeUsuario();
         Email = httpContextAccessor.ObterEmailUsuario();
         Unidade = httpContextAccessor.ObterUnidade();
+        TipoUsuario = httpContextAccessor.ObterTipoUsuario()!.Value;
     }
     public int Id { get; } = -1;
     public int UnidadeId { get; } = 1;
@@ -21,4 +23,7 @@ public class AuthenticatedUser : IAuthenticatedUser
     public string Email { get; } = string.Empty;
     public string Unidade { get; } = string.Empty;
     public bool UsuarioLogado => Id > 0;
+    public bool UsuarioComum => TipoUsuario is ETipoUsuario.Comum;
+    public bool UsuarioAdministrador => TipoUsuario is ETipoUsuario.Comum;
+    public ETipoUsuario? TipoUsuario { get; }
 }

@@ -19,7 +19,8 @@ public abstract class BaseApplicationDbContext : DbContext, IUnitOfWork
         AuthenticatedUser = authenticatedUser;
     }
 
-    public DbSet<Usuario> Admins { get; set; } = null!;
+    public DbSet<Administrador> Administradores { get; set; } = null!;
+    //public DbSet<Usuario> Usuarios { get; set; } = null!;
 
     public async Task<bool> Commit() => await SaveChangesAsync() > 0;
 
@@ -48,12 +49,14 @@ public abstract class BaseApplicationDbContext : DbContext, IUnitOfWork
         {
             ((ITracking)entityEntry.Entity).AtualizadoEm = DateTime.Now;
             ((ITracking)entityEntry.Entity).AtualizadoPor = AuthenticatedUser.Id;
+            ((ITracking)entityEntry.Entity).AtualizadoPorAdmin = AuthenticatedUser.UsuarioAdministrador;
 
             if (entityEntry.State != EntityState.Added)
                 continue;
 
             ((ITracking)entityEntry.Entity).CriadoEm = DateTime.Now;
             ((ITracking)entityEntry.Entity).CriadoPor = AuthenticatedUser.Id;
+            ((ITracking)entityEntry.Entity).AtualizadoPorAdmin = AuthenticatedUser.UsuarioAdministrador;
         }
     }
 
