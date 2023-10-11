@@ -18,6 +18,7 @@ public class AdministradorMapping : IEntityTypeConfiguration<Administrador>
             .HasMaxLength(255);
         
         builder.Property(a => a.Telefone)
+            .IsRequired(false)
             .HasMaxLength(14);
         
         builder.Property(a => a.Cpf)

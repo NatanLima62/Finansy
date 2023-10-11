@@ -15,14 +15,16 @@ public static class DependencyInjection
     public static void DbContextConfig(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddHttpContextAccessor();
-        
+
         services.AddScoped<IAuthenticatedUser>(sp =>
         {
             var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
-            
-            return httpContextAccessor.UsuarioAutenticado() ? new AuthenticatedUser(httpContextAccessor) : new AuthenticatedUser();
+
+            return httpContextAccessor.UsuarioAutenticado()
+                ? new AuthenticatedUser(httpContextAccessor)
+                : new AuthenticatedUser();
         });
-        
+
         services.AddDbContext<ApplicationDbContext>(options =>
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
@@ -31,7 +33,7 @@ public static class DependencyInjection
             options.EnableDetailedErrors();
             options.EnableSensitiveDataLogging();
         });
-        
+
         services.AddDbContext<TenantApplicationDbContext>(options =>
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
@@ -48,13 +50,16 @@ public static class DependencyInjection
             {
                 return serviceProvider.GetRequiredService<TenantApplicationDbContext>();
             }
-            
+
             return serviceProvider.GetRequiredService<ApplicationDbContext>();
         });
     }
 
     public static void ConfigureRepositoriesDependency(this IServiceCollection services)
     {
-        services.AddScoped<IAdministradorRepository, AdministradorRepository>();
+        services
+            .AddScoped<IGerenteRepository, GerenteRepository>()
+            .AddScoped<IUnidadeRepository, UnidadeRepository>()
+            .AddScoped<IAdministradorRepository, AdministradorRepository>();
     }
 }
