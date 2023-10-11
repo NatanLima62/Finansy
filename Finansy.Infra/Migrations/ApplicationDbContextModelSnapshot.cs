@@ -86,7 +86,7 @@ namespace Finansy.Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Administradores");
+                    b.ToTable("Administradores", (string)null);
                 });
 #pragma warning restore 612, 618
         }
