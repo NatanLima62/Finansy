@@ -27,4 +27,6 @@
       <ProjectReference Include="..\Finansy.Infra\Finansy.Infra.csproj" />
     </ItemGroup>
 
+
+
 </Project>

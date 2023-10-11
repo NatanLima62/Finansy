@@ -25,6 +25,11 @@ public abstract class Repository<T> : IRepository<T> where T : BaseEntity, IAggr
         return await _dbSet.AsNoTrackingWithIdentityResolution().Where(expression).FirstOrDefaultAsync();
     }
     
+    public async Task<bool> Any(Expression<Func<T, bool>> expression)
+    {
+        return await _dbSet.AnyAsync(expression);
+    }
+    
     public void Dispose()
     {
         Dispose(true);
