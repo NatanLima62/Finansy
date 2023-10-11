@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Finansy.Api.Controllers.V1.Administracao.Auth;
+namespace Finansy.Api.Controllers.V1.Administracao;
 
 [AllowAnonymous]
 [Route("v{version:apiVersion}/[controller]")]
