@@ -4,15 +4,18 @@ using Finansy.Application.Dtos.v1.Administrador;
 using Finansy.Application.Notifications;
 using Finansy.Domain.Contracts.Repositories;
 using Finansy.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace Finansy.Application.Services;
 
 public class AdministradorService : BaseService, IAdministradorService
 {
     private readonly IAdministradorRepository _administradorRepository;
-    public AdministradorService(IMapper mapper, INotificator notificator, IAdministradorRepository administradorRepository) : base(mapper, notificator)
+    private readonly IPasswordHasher<Administrador> _passwordHasher;
+    public AdministradorService(IMapper mapper, INotificator notificator, IAdministradorRepository administradorRepository, IPasswordHasher<Administrador> passwordHasher) : base(mapper, notificator)
     {
         _administradorRepository = administradorRepository;
+        _passwordHasher = passwordHasher;
     }
 
     public async Task<AdministradorDto?> Adicionar(AdicionarAdministradorDto dto)
@@ -22,7 +25,8 @@ public class AdministradorService : BaseService, IAdministradorService
         {
             return null;
         }
-        
+
+        administrador.Senha = _passwordHasher.HashPassword(administrador, administrador.Senha);
         _administradorRepository.Adicionar(administrador);
         if (await _administradorRepository.UnitOfWork.Commit())
         {

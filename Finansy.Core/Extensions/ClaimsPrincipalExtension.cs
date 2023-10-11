@@ -1,9 +1,22 @@
 using System.Security.Claims;
+using Finansy.Core.Authorization;
 
 namespace Finansy.Core.Extensions;
 
 public static class ClaimsPrincipalExtension
 {
+    public static bool VerificarPermissao(this ClaimsPrincipal? user, string claimName, string claimValue)
+    {
+        if (user is null)
+        {
+            return false;
+        }
+        
+        return user
+            .Claims
+            .Where(p => p.Type == "permissoes")
+            .Any(p => PermissaoClaim.Verificar(p.Value, claimName, claimValue));
+    }
     public static bool UsuarioAutenticado(this ClaimsPrincipal? principal)
     {
         return principal?.Identity?.IsAuthenticated ?? false;

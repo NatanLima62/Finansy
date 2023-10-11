@@ -13,7 +13,7 @@ public class Notificator : INotificator
     }
 
     public bool HasNotification => _erros.Any();
-    public bool IsNotFoundResourse => _isNotFoundResource;
+    public bool IsNotFoundResource => _isNotFoundResource;
 
     public void Handle(string message)
     {
