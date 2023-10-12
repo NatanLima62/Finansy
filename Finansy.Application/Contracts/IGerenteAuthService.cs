@@ -2,7 +2,7 @@ using Finansy.Application.Dtos.V1.Auth;
 
 namespace Finansy.Application.Contracts;
 
-public interface IAdministradorAuthService
+public interface IGerenteAuthService
 {
     Task<TokenDto?> Login(LoginDto dto);
 }

@@ -5,20 +5,20 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Finansy.Api.Controllers.V1.Administracao;
+namespace Finansy.Api.Controllers.V1.Gerencia;
 
 [AllowAnonymous]
 [Route("v{version:apiVersion}/[controller]")]
-public class AuthController : BaseController
+public class AuthController : MainController
 {
-    private readonly IAdministradorAuthService _authService;
-    public AuthController(INotificator notificator, IAdministradorAuthService authService) : base(notificator)
+    private readonly IGerenteAuthService _authService;
+    public AuthController(INotificator notificator, IGerenteAuthService authService) : base(notificator)
     {
         _authService = authService;
     }
     
     [HttpPost("login")]
-    [SwaggerOperation(Summary = "Login.", Tags = new [] { "Administração - Autenticação" })]
+    [SwaggerOperation(Summary = "Login.", Tags = new [] { "Gerencia - Autenticação" })]
     [ProducesResponseType(typeof(TokenDto), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(UnauthorizedObjectResult), StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> Login([FromBody]  LoginDto dto)

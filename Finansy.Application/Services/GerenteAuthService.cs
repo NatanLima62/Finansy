@@ -16,51 +16,48 @@ using NetDevPack.Security.Jwt.Core.Interfaces;
 
 namespace Finansy.Application.Services;
 
-public class AdministradorAuthService : BaseService, IAdministradorAuthService
+public class GerenteAuthService : BaseService, IGerenteAuthService
 {
+    private readonly IPasswordHasher<Gerente> _passwordHasher;
     private readonly JwtSettings _jwtSettings;
     private readonly IJwtService _jwtService;
-    private readonly IAdministradorRepository _administradorRepository;
-    private readonly IPasswordHasher<Administrador> _administradorPasswordHasher;
-
-    public AdministradorAuthService(IMapper mapper, INotificator notificator,
-        IPasswordHasher<Administrador> administradorPasswordHasher, IAdministradorRepository administradorRepository,
-        IOptions<JwtSettings> jwtSettings, IJwtService jwtService) : base(mapper, notificator)
+    private readonly IGerenteRepository _gerenteRepository;
+    public GerenteAuthService(IMapper mapper, INotificator notificator, IPasswordHasher<Gerente> passwordHasher, IOptions<JwtSettings> jwtSettings, IJwtService jwtService, IGerenteRepository gerenteRepository) : base(mapper, notificator)
     {
-        _administradorPasswordHasher = administradorPasswordHasher;
-        _administradorRepository = administradorRepository;
+        _passwordHasher = passwordHasher;
         _jwtSettings = jwtSettings.Value;
         _jwtService = jwtService;
+        _gerenteRepository = gerenteRepository;
     }
 
     public async Task<TokenDto?> Login(LoginDto dto)
     {
-        var administrador = await _administradorRepository.ObterPorEmail(dto.Email);
-        if (administrador == null)
+        var gerente = await _gerenteRepository.ObterPorEmail(dto.Email);
+        if (gerente == null)
         {
             Notificator.HandleNotFoundResourse();
             return null;
         }
 
-        if (_administradorPasswordHasher.VerifyHashedPassword(administrador, administrador.Senha, dto.Senha) !=
+        if (_passwordHasher.VerifyHashedPassword(gerente, gerente.Senha, dto.Senha) !=
             PasswordVerificationResult.Failed)
             return new TokenDto
             {
-                Token = await CreateToken(administrador)
+                Token = await CreateToken(gerente)
             };
         
         return null;
     }
-
-    private async Task<string> CreateToken(Administrador administrador)
+    
+    private async Task<string> CreateToken(Gerente gerente)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
 
         var claimsIdentity = new ClaimsIdentity();
-        claimsIdentity.AddClaim(new Claim(ClaimTypes.NameIdentifier, administrador.Id.ToString()));
-        claimsIdentity.AddClaim(new Claim(ClaimTypes.Name, administrador.Nome));
-        claimsIdentity.AddClaim(new Claim(ClaimTypes.Email, administrador.Email));
-        claimsIdentity.AddClaim(new Claim("TipoUsuario", ETipoUsuario.Administrador.ToDescriptionString()));
+        claimsIdentity.AddClaim(new Claim(ClaimTypes.NameIdentifier, gerente.Id.ToString()));
+        claimsIdentity.AddClaim(new Claim(ClaimTypes.Name, gerente.Nome));
+        claimsIdentity.AddClaim(new Claim(ClaimTypes.Email, gerente.Email));
+        claimsIdentity.AddClaim(new Claim("TipoUsuario", ETipoUsuario.Comum.ToDescriptionString()));
 
         var key = await _jwtService.GetCurrentSigningCredentials();
         var token = tokenHandler.CreateToken(new SecurityTokenDescriptor
