@@ -36,7 +36,8 @@ public static class DependencyInjection
             .AddAutoMapper(Assembly.GetExecutingAssembly());
         
         services
-            .AddScoped<IPasswordHasher<Administrador>, Argon2PasswordHasher<Administrador>>();
+            .AddScoped<IPasswordHasher<Administrador>, Argon2PasswordHasher<Administrador>>()
+            .AddScoped<IPasswordHasher<Gerente>, Argon2PasswordHasher<Gerente>>();
 
     }
 

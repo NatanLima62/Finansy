@@ -29,8 +29,5 @@
     </ItemGroup>
 
 
-    <ItemGroup>
-      <Folder Include="Controllers\V1\Gerencia\" />
-    </ItemGroup>
 
 </Project>
