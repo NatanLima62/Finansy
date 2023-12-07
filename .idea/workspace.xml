@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="iniciando o front">
+      <change afterPath="$PROJECT_DIR$/front/finansy/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.config.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/main.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/ApiConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/ApiVersioningConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/AuthenticationConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/Swagger/ConfigureSwaggerOptions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/Swagger/FileUploadFilter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/Swagger/LowercaseDocumentFilter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/Swagger/SwaggerDefaultValues.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Configuration/SwaggerConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/BaseController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/Administracao/AdministradoresController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/Administracao/AuthController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/Administracao/GerentesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/Administracao/MainController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/Gerencia/AuthController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/Gerencia/UnidadesController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Controllers/V1/MainController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Finansy.Api.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Responses/BadRequestResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Responses/DevelopmentExceptionResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Responses/ExceptionResponse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/Responses/Response.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Api/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Configurations/AutoMapperProfile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Contracts/IAdministradorAuthService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Contracts/IAdministradorService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Contracts/IGerenteAuthService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Contracts/IGerenteService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Contracts/IUnidadeService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/DependencyInjection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Administrador/AdicionarAdministradorDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Administrador/AdministradorDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Administrador/AtualizarAdministradorDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Auth/LoginDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Auth/TokenDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Gerente/AdicionarGerenteDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Gerente/AtualizarGerenteDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Gerente/GerenteDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Unidade/AdicionarUnidadeDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Unidade/AtualizarUnidadeDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Dtos/V1/Unidade/UnidadeDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Finansy.Application.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Notifications/INotificator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Notifications/Notificator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Services/AdministradorAuthService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Services/AdministradorService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Services/BaseService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Services/GerenteAuthService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Services/GerenteService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Application/Services/UnidadeService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Authorization/AuthenticatedUser/AuthenticatedUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Authorization/AuthenticatedUser/IAuthenticatedUser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Authorization/CustomAuthorization.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Authorization/EPermissaoTipo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Authorization/PermissaoClaim.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Enums/EPathAccess.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Enums/ETipoUsuario.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Exceptions/DomainException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Extensions/ClaimsPrincipalExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Extensions/EnumExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Extensions/HttpContextAccessorExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Extensions/StringExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Finansy.Core.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Settings/AppSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Settings/EmailSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Settings/JwtSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Core/Settings/UploadSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/IAggregateRoot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/IEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/ISoftDelete.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/ITenant.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/ITracking.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/IUnitOfWork.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/Repositories/IAdministradorRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/Repositories/IGerenteRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/Repositories/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Contracts/Repositories/IUnidadeRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Entities/Administrador.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Entities/BaseEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Entities/Entity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Entities/Gerente.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Entities/Unidade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Finansy.Domain.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Validators/AdminValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Validators/GerenteValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Domain/Validators/UnidadeValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Contexts/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Contexts/BaseApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Contexts/TenantApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Converters/DateOnlyCustomConverter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Converters/TimeOnlyCustomConverter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/DependencyInjection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Extensions/EntityTypeBuilderExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Extensions/ModelBuilderExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Finansy.Infra.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Mappings/AdministradorMapping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Mappings/GerenteMapping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Mappings/UnidadeMapping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/20231010214719_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/20231010214719_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/20231010214743_AddDefaultAdmin.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/20231010214743_AddDefaultAdmin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/20231011234834_AddGerenteEUnidade.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/20231011234834_AddGerenteEUnidade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Repositories/AdministradorRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Repositories/GerenteRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Repositories/Repository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.Infra/Repositories/UnidadeRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finansy.sln" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2ZBxjOMkcvImCuHzmcjEBFXUF5S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="" />
+      <created>1701909408977</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701909408977</updated>
+      <workItem from="1701909410383" duration="379000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="iniciando o front" />
+    <option name="LAST_COMMIT_MESSAGE" value="iniciando o front" />
+  </component>
+</project>
