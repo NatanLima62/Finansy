@@ -136,7 +136,7 @@ public class AdministradorService : BaseService, IAdministradorService
         }
 
         var administradorExistente = await _administradorRepository.Any(c =>
-            c.Email == administrador.Email || c.Cpf == administrador.Cpf && c.Id != administrador.Id);
+            (c.Email == administrador.Email || c.Cpf == administrador.Cpf) && c.Id != administrador.Id);
         if (administradorExistente)
         {
             Notificator.Handle($"Já existe um administrador {(administrador.Desativado ? "desativado" : "ativado")} cadastrado com essas informações");

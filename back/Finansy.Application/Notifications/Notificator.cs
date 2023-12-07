@@ -29,8 +29,6 @@ public class Notificator : INotificator
 
     public void HandleNotFoundResourse()
     {
-        if (!_isNotFoundResource)
-            throw new InvalidOperationException("Não é possível chamar um NotFoundResource quando for handle");
         _isNotFoundResource = true;
     }
 

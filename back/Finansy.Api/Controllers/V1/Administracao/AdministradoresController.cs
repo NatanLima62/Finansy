@@ -1,13 +1,11 @@
 using Finansy.Application.Contracts;
 using Finansy.Application.Dtos.v1.Administrador;
 using Finansy.Application.Notifications;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace Finansy.Api.Controllers.V1.Administracao;
 
-[AllowAnonymous]
 [Route("v{version:apiVersion}/[controller]")]
 public class AdministradoresController : MainController
 {

@@ -7,4 +7,5 @@ public class AdministradorDto
     public string Email { get; set; } = null!;
     public string? Telefone { get; set; }
     public string Cpf { get; set; } = null!;
+    public bool Desativado { get; set; }
 }

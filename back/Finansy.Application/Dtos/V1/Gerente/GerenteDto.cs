@@ -8,4 +8,5 @@ public class GerenteDto
     public string? Telefone { get; set; }
     public string Cpf { get; set; } = null!;
     public string? Cnpj { get; set; }
+    public bool Desativado { get; set; }
 }

@@ -15,8 +15,8 @@ public class AdminValidator : AbstractValidator<Administrador>
             .WithMessage("Nome deve ter entre 3 e 120 caracteres");
         
         RuleFor(a => a.Senha)
-            .Length(8, 20)
-            .WithMessage("Nome deve ter entre 8 e 20 caracteres");
+            .MinimumLength(8)
+            .WithMessage("Senha deve ter no mínimo 8 caracteres");
 
         RuleFor(a => a.Cpf)
             .Length(11, 14)
