@@ -29,5 +29,9 @@ public class GerenteValidator : AbstractValidator<Gerente>
         RuleFor(g => g.Telefone)
             .Length(9, 14)
             .WithMessage("Telefone deve ter entre 9 e 14 caracteres");
+        
+        RuleFor(g => g.UnidadeId)
+            .GreaterThan(0)
+            .WithMessage("Deve ser informado uma unidade válida");
     }
 }

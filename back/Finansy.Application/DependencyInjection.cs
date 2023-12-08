@@ -45,12 +45,13 @@ public static class DependencyInjection
     {
         services
             .AddScoped<INotificator, Notificator>();
-        
+
         services
-            .AddScoped<IAdministradorAuthService, AdministradorAuthService>()
             .AddScoped<IUnidadeService, UnidadeService>()
-            .AddScoped<IGerenteService, GerenteService>()
-            .AddScoped<IAdministradorService, AdministradorService>();
+            .AddScoped<IAdministradorAuthService, AdministradorAuthService>()
+            .AddScoped<IAdministradorService, AdministradorService>()
+            .AddScoped<IGerenteAuthService, GerenteAuthService>()
+            .AddScoped<IGerenteService, GerenteService>();
     }
     
     public static void UseStaticFileConfiguration(this IApplicationBuilder app, IConfiguration configuration)

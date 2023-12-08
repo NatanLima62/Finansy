@@ -31,23 +31,6 @@ public static class AuthenticationConfiguration
                     ValidIssuer = appSettings.Emissor,
                     ValidAudiences = appSettings.Audiences()
                 };
-
-                options.Events = new JwtBearerEvents
-                {
-                    OnMessageReceived = context =>
-                    {
-                        var accessToken = context.Request.Query["access_token"].ToString();
-                        var path = context.HttpContext.Request.Path;
-                        if (!string.IsNullOrEmpty(accessToken) && (path.StartsWithSegments("/hubs") ||
-                                                                   path.StartsWithSegments(
-                                                                       $"/{EPathAccess.Private.ToDescriptionString()}")))
-                        {
-                            context.Token = accessToken.FromBase64();
-                        }
-
-                        return Task.CompletedTask;
-                    }
-                };
             });
 
         services.AddAuthorization(options =>

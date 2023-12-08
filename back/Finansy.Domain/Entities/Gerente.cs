@@ -6,6 +6,7 @@ namespace Finansy.Domain.Entities;
 
 public class Gerente : Entity, ISoftDelete, IAggregateRoot
 {
+    public int UnidadeId { get; set; }
     public string Nome { get; set; } = null!;
     public string Email { get; set; } = null!;
     public string Senha { get; set; } = null!;
@@ -13,12 +14,11 @@ public class Gerente : Entity, ISoftDelete, IAggregateRoot
     public string Cpf { get; set; } = null!;
     public string? Cnpj { get; set; }
     public bool Desativado { get; set; }
-    public List<Unidade> Unidades { get; set; } = new();
+    public Unidade Unidade { get; set; } = null!;
 
     public override bool Validate(out ValidationResult validationResult)
     {
         validationResult = new GerenteValidator().Validate(this);
         return validationResult.IsValid;
     }
-
 }

@@ -9,7 +9,7 @@ namespace Finansy.Api.Controllers.V1.Gerencia;
 
 [AllowAnonymous]
 [Route("v{version:apiVersion}/[controller]")]
-public class AuthController : MainController
+public class AuthController : BaseController
 {
     private readonly IGerenteAuthService _authService;
     public AuthController(INotificator notificator, IGerenteAuthService authService) : base(notificator)
