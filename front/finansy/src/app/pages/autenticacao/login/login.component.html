@@ -1,0 +1,59 @@
+<div class="login-container">
+  <div class="login-left">
+    <h1>Finansy</h1>
+    <form [formGroup]="loginForm" class="login-form">
+      <div class="login-form-campo">
+        <label>Email</label>
+        <mat-form-field class="login-form-input">
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            placeholder="email@exemplo.com"
+            formControlName="email"
+            required
+          />
+          <mat-error *ngIf="possuiErros('email')">
+            <span *ngFor="let erro of obterErrosPorCampo('email')">
+              {{erro}}
+            </span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="login-form-campo">
+        <label>Senha</label>
+        <mat-form-field class="login-form-input">
+          <mat-label>Senha</mat-label>
+          <input
+            matInput
+            [type]="hide ? 'password' : 'text'"
+            required
+            formControlName="senha"
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+            <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+          </button>
+          <mat-error *ngIf="possuiErros('senha')">
+            <span *ngFor="let erro of obterErrosPorCampo('senha')">
+              {{erro}}
+            </span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="login-form-botao">
+        <div>
+          <button mat-button>Não possui cadastro?</button>
+        </div>
+        <div>
+          <button mat-button color="primary">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="login-right"></div>
+</div>

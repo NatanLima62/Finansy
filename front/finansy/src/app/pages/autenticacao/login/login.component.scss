@@ -1,0 +1,32 @@
+.login-container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  .login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+
+    .login-form{
+      &-campo{
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-botao{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .login-right{
+    width: 50%;
+    height: 100%;
+    background: black;
+  }
+}
