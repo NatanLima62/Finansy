@@ -4,30 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="add login form">
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/models/loginViewModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/service/login-service.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/home/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/home/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/home/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/finansy/src/environment.ts" afterDir="false" />
+    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="Refazendo projeto front">
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/admin/autenticacao/cadastro-admin/cadastro-admin.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/admin/autenticacao/cadastro-admin/cadastro-admin.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.config.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.config.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/home/home/home.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/main.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/main.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/finansy/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/cadastro/cadastro.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/comum/cadastro/cadastro/cadastro.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/cadastro/cadastro.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/admin/autenticacao/cadastro-admin/cadastro-admin.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/cadastro/cadastro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/comum/cadastro/cadastro/cadastro.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/finansy/src/app/pages/comum/cadastro/cadastro/cadastro.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/finansy/src/app/pages/autenticacao/login/login.component.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +62,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\natan\Documents\Scripts\Pessoal\Full\Finansy\front\finansy\src\app\pages\admin" />
       <recent name="C:\Users\natan\Documents\Scripts\Pessoal\Full\Finansy\front\finansy\src\app" />
       <recent name="C:\Users\natan\Documents\Scripts\Pessoal\Full\Finansy\front\finansy\src\app\pages\autenticacao\login\service" />
       <recent name="C:\Users\natan\Documents\Scripts\Pessoal\Full\Finansy\front\finansy\src\app\pages\autenticacao" />
@@ -91,6 +82,7 @@
       <workItem from="1702158770912" duration="14125000" />
       <workItem from="1702209674703" duration="34000" />
       <workItem from="1702600340552" duration="1725000" />
+      <workItem from="1702602506206" duration="2702000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando o front">
       <option name="closed" value="true" />
@@ -116,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702167454476</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refazendo projeto front">
+      <option name="closed" value="true" />
+      <created>1702603153727</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702603153727</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +126,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="iniciando o front" />
     <MESSAGE value="add login form" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login form" />
+    <MESSAGE value="Refazendo projeto front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refazendo projeto front" />
   </component>
 </project>
