@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="setup inicial">
-      <change afterPath="$PROJECT_DIR$/react/finansy/src/app/pages/autenticacao/administracao/login/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/finansy/src/app/pages/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/finansy/src/app/routes/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/finansy/src/app/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/finansy/src/app/shareds/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/finansy/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/finansy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/finansy/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/finansy/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/src/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/finansy/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/finansy/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/src/index.tsx" afterDir="false" />
+    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="Add mui e react routes">
+      <change beforePath="$PROJECT_DIR$/react/finansy/src/app/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/src/app/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +78,7 @@
       <workItem from="1702600340552" duration="1725000" />
       <workItem from="1702602506206" duration="7196000" />
       <workItem from="1702639559106" duration="10000" />
-      <workItem from="1704329288453" duration="1282000" />
+      <workItem from="1704329288453" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando o front">
       <option name="closed" value="true" />
@@ -171,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704329662309</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add mui e react routes">
+      <option name="closed" value="true" />
+      <created>1704330769659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704330769659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +182,7 @@
     <MESSAGE value="iniciando cadastro de adm" />
     <MESSAGE value="add react" />
     <MESSAGE value="setup inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup inicial" />
+    <MESSAGE value="Add mui e react routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mui e react routes" />
   </component>
 </project>
