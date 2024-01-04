@@ -1,1 +1,1 @@
-export {};
+export * from "./autenticacao/administracao/login/LoginAdmin";
