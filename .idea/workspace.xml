@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="iniciando cadastro de adm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d41be1ee-ef3c-4450-9037-e5775c6b6715" name="Changes" comment="add react">
+      <change beforePath="$PROJECT_DIR$/react/finansy/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/finansy/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/finansy/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/finansy/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,25 +31,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\natan\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\natan\\Documents\\Scripts\\Pessoal\\Full\\Finansy\\front\\finansy\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\natan\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\natan\\Documents\\Scripts\\Pessoal\\Full\\Finansy\\angular\\finansy\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\natan\Documents\Scripts\Pessoal\Full\Finansy\front\finansy\src\app\pages\admin" />
@@ -72,6 +74,7 @@
       <workItem from="1702600340552" duration="1725000" />
       <workItem from="1702602506206" duration="7196000" />
       <workItem from="1702639559106" duration="10000" />
+      <workItem from="1704329288453" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando o front">
       <option name="closed" value="true" />
@@ -113,7 +116,39 @@
       <option name="project" value="LOCAL" />
       <updated>1702609953709</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add react">
+      <option name="closed" value="true" />
+      <created>1704329308931</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704329308931</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add react">
+      <option name="closed" value="true" />
+      <created>1704329326318</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704329326318</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add react">
+      <option name="closed" value="true" />
+      <created>1704329334423</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704329334423</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add react">
+      <option name="closed" value="true" />
+      <created>1704329402151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704329402151</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +160,7 @@
     <MESSAGE value="add login form" />
     <MESSAGE value="Refazendo projeto front" />
     <MESSAGE value="iniciando cadastro de adm" />
-    <option name="LAST_COMMIT_MESSAGE" value="iniciando cadastro de adm" />
+    <MESSAGE value="add react" />
+    <option name="LAST_COMMIT_MESSAGE" value="add react" />
   </component>
 </project>
