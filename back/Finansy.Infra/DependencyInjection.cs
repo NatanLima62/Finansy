@@ -58,7 +58,6 @@ public static class DependencyInjection
     public static void ConfigureRepositoriesDependency(this IServiceCollection services)
     {
         services
-            .AddScoped<IGerenteRepository, GerenteRepository>()
             .AddScoped<IUnidadeRepository, UnidadeRepository>()
             .AddScoped<IAdministradorRepository, AdministradorRepository>();
     }

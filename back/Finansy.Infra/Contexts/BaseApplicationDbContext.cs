@@ -20,7 +20,6 @@ public abstract class BaseApplicationDbContext : DbContext, IUnitOfWork
     }
 
     public DbSet<Administrador> Administradores { get; set; } = null!;
-    public DbSet<Gerente> Gerentes { get; set; } = null!;
     public DbSet<Unidade> Unidades { get; set; } = null!;
 
     public async Task<bool> Commit() => await SaveChangesAsync() > 0;

@@ -34,10 +34,9 @@ public static class DependencyInjection
 
         services
             .AddAutoMapper(Assembly.GetExecutingAssembly());
-        
+
         services
-            .AddScoped<IPasswordHasher<Administrador>, Argon2PasswordHasher<Administrador>>()
-            .AddScoped<IPasswordHasher<Gerente>, Argon2PasswordHasher<Gerente>>();
+            .AddScoped<IPasswordHasher<Administrador>, Argon2PasswordHasher<Administrador>>();
 
     }
 
@@ -49,9 +48,7 @@ public static class DependencyInjection
         services
             .AddScoped<IUnidadeService, UnidadeService>()
             .AddScoped<IAdministradorAuthService, AdministradorAuthService>()
-            .AddScoped<IAdministradorService, AdministradorService>()
-            .AddScoped<IGerenteAuthService, GerenteAuthService>()
-            .AddScoped<IGerenteService, GerenteService>();
+            .AddScoped<IAdministradorService, AdministradorService>();
     }
     
     public static void UseStaticFileConfiguration(this IApplicationBuilder app, IConfiguration configuration)

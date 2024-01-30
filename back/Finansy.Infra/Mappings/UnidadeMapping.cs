@@ -38,17 +38,8 @@ public class UnidadeMapping : IEntityTypeConfiguration<Unidade>
         builder.Property(u => u.Estado)
             .HasMaxLength(120);
         
-        builder.Property(u => u.GerenteId)
-            .IsRequired();
-        
         builder.Property(u => u.AdministradorId)
             .IsRequired();
-
-        builder
-            .HasOne(u => u.Gerente)
-            .WithOne(g => g.Unidade)
-            .HasForeignKey<Gerente>(g => g.UnidadeId)
-            .OnDelete(DeleteBehavior.Restrict);
         
         builder
             .HasOne(u => u.Administrador)
